@@ -3,7 +3,7 @@
     <http:listener-config name="demo-httpListenerConfig">
         <http:listener-connection host="0.0.0.0" port="8081" />
     </http:listener-config>
-    <apikit:config name="demo-config" api="resource::f7e4a870-eeaa-4089-bc94-5649571b767d:demo:1.0.0:raml:zip:demo.raml" outboundHeadersMapName="outboundHeaders" httpStatusVarName="httpStatus" />
+    <apikit:config name="demo-config" api="resource::dc2ba7a3-9780-4263-9def-e8cbd2444b91:demo:1.0.0:raml:zip:demo.raml" outboundHeadersMapName="outboundHeaders" httpStatusVarName="httpStatus" />
     <flow name="demo-main">
         <http:listener config-ref="demo-httpListenerConfig" path="/api/*">
             <http:response statusCode="#[vars.httpStatus default 200]">

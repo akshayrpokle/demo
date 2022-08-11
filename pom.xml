@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>f7e4a870-eeaa-4089-bc94-5649571b767d</groupId>
+	<groupId>dc2ba7a3-9780-4263-9def-e8cbd2444b91</groupId>
 	<artifactId>demo</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>mule-application</packaging>
@@ -36,7 +36,7 @@
 						<connectedAppClientId>${env.GLOBAL_MULESOFT_CICD_CLIENT_ID}</connectedAppClientId>
 						<connectedAppClientSecret>${env.GLOBAL_MULESOFT_CICD_CLIENT_SECRET}</connectedAppClientSecret>
 						<connectedAppGrantType>client_credentials</connectedAppGrantType>
-						<applicationName>demo</applicationName>
+						<applicationName>demo12312312313</applicationName>
 						<businessGroupId>${project.groupId}</businessGroupId>
 						<environment>Sandbox</environment>
 						<workers>1</workers>
@@ -62,8 +62,8 @@
 			<classifier>mule-plugin</classifier>
 		</dependency>
 		<dependency>
-			<groupId>f7e4a870-eeaa-4089-bc94-5649571b767d</groupId>
-			<artifactId>Demo</artifactId>
+			<groupId>dc2ba7a3-9780-4263-9def-e8cbd2444b91</groupId>
+			<artifactId>demo</artifactId>
 			<version>1.0.0</version>
 			<classifier>raml</classifier>
 			<type>zip</type>
@@ -77,12 +77,6 @@
 	</dependencies>
 
 	<repositories>
-		<repository>
-			<id>anypoint-exchange-v2</id>
-			<name>Anypoint Exchange</name>
-			<url>https://maven.anypoint.mulesoft.com/api/v2/maven</url>
-			<layout>default</layout>
-		</repository>
 		<repository>
 			<id>anypoint-exchange-v3</id>
 			<name>Anypoint Exchange</name>

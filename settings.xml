@@ -39,7 +39,7 @@
             <activeByDefault>true</activeByDefault>
         </activation>
 		<properties>
-                <mulesoft.exchange.groupid>f7e4a870-eeaa-4089-bc94-5649571b767d</mulesoft.exchange.groupid>
+                <mulesoft.exchange.groupid>dc2ba7a3-9780-4263-9def-e8cbd2444b91</mulesoft.exchange.groupid>
          </properties>
         <repositories>
             <repository>
