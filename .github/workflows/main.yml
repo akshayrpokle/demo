@@ -1,0 +1,26 @@
+# This workflow will build a MuleSoft project and deploy to CloudHub
+
+name: Cloudhub deployment with Maven [main]
+
+on:
+  push:
+    branches: [ main ]
+  
+env:
+  GLOBAL_MULESOFT_CICD_CLIENT_ID : ${{ secrets.GLOBAL_MULESOFT_CICD_CLIENT_ID }}
+  GLOBAL_MULESOFT_CICD_CLIENT_SECRET : ${{ secrets.GLOBAL_MULESOFT_CICD_CLIENT_SECRET }}
+
+jobs:
+  BuildAndDeploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    
+    - name: Checkout repository
+      uses: actions/checkout@v2
+    
+    - name: Deploy with Maven
+      run: mvn -s settings.xml -DskipTests deploy -DmuleDeploy 
+      
+    - name: Upload artifact to Exchange
+      run: mvn -s settings.xml -DskipTests clean deploy
