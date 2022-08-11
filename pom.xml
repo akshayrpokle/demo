@@ -63,7 +63,7 @@
 		</dependency>
 		<dependency>
 			<groupId>f7e4a870-eeaa-4089-bc94-5649571b767d</groupId>
-			<artifactId>demo</artifactId>
+			<artifactId>Demo</artifactId>
 			<version>1.0.0</version>
 			<classifier>raml</classifier>
 			<type>zip</type>
