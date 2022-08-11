@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>dc2ba7a3-9780-4263-9def-e8cbd2444b91</groupId>
-	<artifactId>demo</artifactId>
+	<artifactId>demo1</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>mule-application</packaging>
 
